@@ -60,7 +60,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {howToPlay.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#how-to-play"}
+              href={process.env.PUBLIC_URL + "/#howToPlay"}
             >
               How to Play
             </Nav.Link>
