@@ -53,33 +53,49 @@ const Navigation = React.forwardRef((props, ref) => {
           {repos.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#projects"}
+              href={process.env.PUBLIC_URL + "/#news"}
             >
-              Projects
+              News
             </Nav.Link>
           )}
-          <Nav.Link
-            className="nav-link lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Resume
-          </Nav.Link>
           {about.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
+              href={process.env.PUBLIC_URL + "/#how-to-play"}
             >
-              About
+              How to Play
             </Nav.Link>
           )}
           {skills.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#skills"}
+              href={process.env.PUBLIC_URL + "/#shop"}
             >
-              Skills
+              Shop
+            </Nav.Link>
+          )}
+          {skills.show && (
+            <Nav.Link
+              className="nav-link lead"
+              href={process.env.PUBLIC_URL + "/#lore"}
+            >
+              Lore
+            </Nav.Link>
+          )}
+          {skills.show && (
+            <Nav.Link
+              className="nav-link lead"
+              href={process.env.PUBLIC_URL + "/#banlist"}
+            >
+              Banlist
+            </Nav.Link>
+          )}
+          {skills.show && (
+            <Nav.Link
+              className="nav-link lead"
+              href={process.env.PUBLIC_URL + "/#database"}
+            >
+              Database
             </Nav.Link>
           )}
         </Nav>

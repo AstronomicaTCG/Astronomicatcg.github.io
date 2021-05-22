@@ -5,9 +5,9 @@
   "version": "2.0.0",
   "private": true,
   "author": {
-    "name": "Yang Yang",
-    "email": "yangyang1998@gmail.com",
-    "url": "https://github.com/yang573"
+    "name": "Astronomica",
+    "email": "aetherborntcg@gmail.com",
+    "url": "https://github.com/AstronomicaTCG"
   },
   "dependencies": {
     "axios": "^0.19.2",

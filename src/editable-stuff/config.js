@@ -6,10 +6,10 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f",
-  firstName: "Yang",
+  firstName: "Astronomica",
   middleName: "",
-  lastName: "Yang",
-  message: "Senior at Stony Brook University",
+  lastName: "TCG",
+  message: "",
   icons: [
     {
       image: "fa-github",
@@ -66,6 +66,31 @@ const repos = {
     "yang573/club-membership-py", "alexfchin/roombalistic"
   ],
 };
+
+const news = {
+  show: true,
+}
+
+const howToPlay = {
+  show: true,
+}
+
+const shop = {
+  show: true,
+}
+
+const lore = {
+  show: true,
+}
+
+const banlist = {
+  show: true,
+}
+
+const database = {
+  show: true,
+}
+
 
 const manualProjects = [
   {
@@ -127,24 +152,4 @@ const skills = {
   ]
 };
 
-// GET IN TOUCH SECTION
-const getInTouch = {
-  show: false, // Not enabled
-  heading: "Get In Touch",
-  message:
-    "Questions? Comments? Concerns? Send me an email"
-};
-
-const contactInfo = {
-  email: "yangyang1998@gmail.com",
-  location: "Stony Brook, NY",
-  locationLink: "https://www.openstreetmap.org/#map=12/40.9174/-73.1247",
-  occupation: "Student at Stony Brook University"
-}
-
-// Blog SECTION
-// const blog = {
-//   show: false,
-// };
-
-export { navBar, mainBody, about, repos, manualProjects, skills, leadership, getInTouch, contactInfo };
+export { navBar, mainBody, about, repos, manualProjects, skills, leadership, news, howToPlay, shop, lore, banlist, database };

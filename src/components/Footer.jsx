@@ -21,10 +21,10 @@ const Footer = (props) => {
         <a
           className="badge badge-dark"
           rel="noopener"
-          href="https://github.com/yang573"
+          href="https://github.com/AstronomicaTCG"
           aria-label="My GitHub"
         >
-          Yang Yang
+          Astronomica TCG
         </a>{" "}
         <p>
           <small className="text-muted">
