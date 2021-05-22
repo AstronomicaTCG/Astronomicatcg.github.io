@@ -3,7 +3,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 import {
   navBar,
   mainBody,
-  
   news,
   howToPlay,
   shop,
@@ -14,7 +13,6 @@ import {
 import MainBody from "./components/home/MainBody";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-
 import News from "./components/home/News";
 import HowToPlay from "./components/home/HowToPlay";
 import Shop from "./components/home/Shop";
@@ -35,32 +33,33 @@ const Home = React.forwardRef((props, ref) => {
       />
       {news.show && (
         <News
-
+          heading={news.heading}
+          news={news.news}
         />
       )}
       {howToPlay.show && (
         <HowToPlay
-
+          heading={howToPlay.heading}
         />
       )}
       {shop.show && (
         <Shop
-
+        heading={shop.heading}
         />
       )}
       {lore.show && (
         <Lore
-
+        heading={lore.heading}
         />
       )}
       {banlist.show && (
         <Banlist
-
+          heading={banlist.heading}
         />
       )}
       {database.show && (
         <Database
-
+          heading={database.heading}
         />
       )}
 
@@ -72,7 +71,8 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
           manualProjects={manualProjects}
         />
-      )}
+      )} */}
+      {/*
       {leadership.show && (
         <Leadership
           heading={leadership.heading}

@@ -1,9 +1,11 @@
 import React from "react";
 
-const Banlist = ({  }) => {
+const Banlist = ({ heading }) => {
   return (
     <div>
-        BAN LIST
+        <div className="sectionHeading" id="banlist">
+          <h2>{heading}</h2>
+        </div>
     </div>
   );
 };

@@ -4,10 +4,9 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, news, howToPlay, shop, lore, banlist, database, skills } from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
-  // const { showBlog, FirstName } = config;
   const [isTop, setIsTop] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
   const navbarMenuRef = React.useRef();
@@ -50,7 +49,7 @@ const Navigation = React.forwardRef((props, ref) => {
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </Nav.Link>
           } */}
-          {repos.show && (
+          {news.show && (
             <Nav.Link
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#news"}
@@ -58,7 +57,7 @@ const Navigation = React.forwardRef((props, ref) => {
               News
             </Nav.Link>
           )}
-          {about.show && (
+          {howToPlay.show && (
             <Nav.Link
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#how-to-play"}
@@ -66,7 +65,7 @@ const Navigation = React.forwardRef((props, ref) => {
               How to Play
             </Nav.Link>
           )}
-          {skills.show && (
+          {shop.show && (
             <Nav.Link
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#shop"}
@@ -74,7 +73,7 @@ const Navigation = React.forwardRef((props, ref) => {
               Shop
             </Nav.Link>
           )}
-          {skills.show && (
+          {lore.show && (
             <Nav.Link
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#lore"}
@@ -82,7 +81,7 @@ const Navigation = React.forwardRef((props, ref) => {
               Lore
             </Nav.Link>
           )}
-          {skills.show && (
+          {banlist.show && (
             <Nav.Link
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#banlist"}
@@ -90,7 +89,7 @@ const Navigation = React.forwardRef((props, ref) => {
               Banlist
             </Nav.Link>
           )}
-          {skills.show && (
+          {database.show && (
             <Nav.Link
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#database"}

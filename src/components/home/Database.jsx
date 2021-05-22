@@ -1,9 +1,11 @@
 import React from "react";
 
-const Database = ({  }) => {
+const Database = ({ heading }) => {
   return (
     <div>
-        DATABASE
+        <div className="sectionHeading" id="database">
+          <h2>{heading}</h2>
+        </div>
     </div>
   );
 };

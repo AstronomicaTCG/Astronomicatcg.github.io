@@ -5,19 +5,19 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f",
-  firstName: "Astronomica",
+  gradientColors: "#808080, #000000, #FFFFFF, #98F5FF, #CCAC00",
+  firstName: "Welcome to Astronomica!",
   middleName: "",
-  lastName: "TCG",
+  lastName: "",
   message: "",
   icons: [
     {
-      image: "fa-github",
-      url: "https://github.com/yang573",
+      image: "fa-youtube",
+      url: "https://www.youtube.com/channel/UCx03EedbIJrnWSRjbDTn_jA",
     },
     {
-      image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/yang573/",
+      image: "fa-discord",
+      url: "https://discord.gg/bpTp2QfXsQ",
     },
   ],
 };
@@ -69,26 +69,33 @@ const repos = {
 
 const news = {
   show: true,
+  heading: "Astronomica News",
+  news: ["news"]
 }
 
 const howToPlay = {
   show: true,
+  heading: "How To Play",
 }
 
 const shop = {
   show: true,
+  heading: "Shop",
 }
 
 const lore = {
   show: true,
+  heading: "Astronomica Lore",
 }
 
 const banlist = {
   show: true,
+  heading: "Official Ban List",
 }
 
 const database = {
   show: true,
+  heading: "Card Database",
 }
 
 
@@ -109,30 +116,6 @@ const manualProjects = [
   }
 ];
 
-// Leadership SECTION
-const leadership = {
-  show: false, // Not enabled
-  heading: "Leadership",
-  message:
-    "Generic leadership message.",
-  images: [
-    { 
-      img: require("../editable-stuff/yyang.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-    { 
-      img: require("../editable-stuff/yyang.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-  ],
-  imageSize: {
-    width:"615",
-    height:"450"
-  }
-};
-
 // SKILLS SECTION
 const skills = {
   show: true,
@@ -152,4 +135,4 @@ const skills = {
   ]
 };
 
-export { navBar, mainBody, about, repos, manualProjects, skills, leadership, news, howToPlay, shop, lore, banlist, database };
+export { navBar, mainBody, news, howToPlay, shop, lore, banlist, database, skills };

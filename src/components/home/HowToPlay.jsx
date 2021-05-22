@@ -1,9 +1,11 @@
 import React from "react";
 
-const HowToPlay = ({  }) => {
+const HowToPlay = ({ heading }) => {
   return (
     <div>
-        HOW TO PLAY
+        <div className="sectionHeading" id="howToPlay">
+          <h2>{heading}</h2>
+        </div>
     </div>
   );
 };

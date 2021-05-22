@@ -1,9 +1,11 @@
 import React from "react";
 
-const Shop = ({  }) => {
+const Shop = ({ heading }) => {
   return (
     <div>
-        SHOP
+        <div className="sectionHeading" id="shop">
+          <h2>{heading}</h2>
+        </div>
     </div>
   );
 };

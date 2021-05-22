@@ -1,9 +1,11 @@
 import React from "react";
 
-const Lore = ({  }) => {
+const Lore = ({ heading }) => {
   return (
     <div>
-        LORE
+        <div className="sectionHeading" id="Lore">
+          <h2>{heading}</h2>
+        </div>
     </div>
   );
 };
