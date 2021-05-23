@@ -26,9 +26,11 @@ const App = () => {
     <BrowserRouter>
       {navBar.show && <Navbar ref={titleRef}/>}
       <Switch>
+
         <Route exact path="/">
           <Redirect to="/home"></Redirect>
         </Route>
+
         <Route exact path="/home" render={() => 
           <MainBody
             gradient={mainBody.gradientColors}
@@ -38,13 +40,44 @@ const App = () => {
             icons={mainBody.icons}
           />
         }/>
+
         <Route exact path="/news" render={() => 
           <News          
             heading={news.heading}
             news={news.news}
           />
         }/>
+
+        <Route exact path="/howToPlay" render={() => 
+          <HowToPlay          
+            heading={howToPlay.heading}
+          />
+        }/>
         
+        <Route exact path="/shop" render={() => 
+          <Shop          
+            heading={shop.heading}
+          />
+        }/>
+        
+        <Route exact path="/lore" render={() => 
+          <Lore          
+            heading={lore.heading}
+          />
+        }/>
+        
+        <Route exact path="/banlist" render={() => 
+          <Banlist          
+            heading={banlist.heading}
+          />
+        }/>
+        
+        <Route exact path="/database" render={() => 
+          <Database          
+            heading={database.heading}
+          />
+        }/>
+
       </Switch>
       <Footer></Footer>
     </BrowserRouter>

@@ -6,7 +6,7 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   show: true,
-  gradientColors: "#808080, #000000, #FFFFFF, #98F5FF, #CCAC00",
+  gradientColors: "#808080, #000000, #CCAC00",
   firstName: "Welcome to Astronomica!",
   middleName: "",
   home: "Home",
