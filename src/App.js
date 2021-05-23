@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import {
   navBar,
   mainBody,
@@ -20,88 +20,33 @@ import Lore from "./components/home/Lore";
 import Banlist from "./components/home/Banlist";
 import Database from "./components/home/Database";
 
-
-const Home = React.forwardRef((props, ref) => {
-  return (
-    <>
-      <MainBody
-        gradient={mainBody.gradientColors}
-        title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
-        icons={mainBody.icons}
-        ref={ref}
-      />
-      {news.show && (
-        <News
-          heading={news.heading}
-          news={news.news}
-        />
-      )}
-      {howToPlay.show && (
-        <HowToPlay
-          heading={howToPlay.heading}
-        />
-      )}
-      {shop.show && (
-        <Shop
-        heading={shop.heading}
-        />
-      )}
-      {lore.show && (
-        <Lore
-        heading={lore.heading}
-        />
-      )}
-      {banlist.show && (
-        <Banlist
-          heading={banlist.heading}
-        />
-      )}
-      {database.show && (
-        <Database
-          heading={database.heading}
-        />
-      )}
-
-      {/* {repos.show && (
-        <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
-          manualProjects={manualProjects}
-        />
-      )} */}
-      {/*
-      {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )}
-      {skills.show && (
-        <Skills
-          heading={skills.heading}
-          skills={skills.skills}
-        />
-      )} */}
-    </>
-  );
-});
-
 const App = () => {
-  const titleRef = React.useRef();
-
+  const titleRef = React.useRef(0);
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
-      {navBar.show && <Navbar ref={titleRef} />}
-      <Route path="/" exact component={() => <Home ref={titleRef} />} />
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
-      <Footer>
-      </Footer>
+    <BrowserRouter>
+      {navBar.show && <Navbar ref={titleRef}/>}
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/home"></Redirect>
+        </Route>
+        <Route exact path="/home" render={() => 
+          <MainBody
+            gradient={mainBody.gradientColors}
+            title={`${mainBody.firstName}`}
+            home={mainBody.home}
+            message={mainBody.message}
+            icons={mainBody.icons}
+          />
+        }/>
+        <Route exact path="/news" render={() => 
+          <News          
+            heading={news.heading}
+            news={news.news}
+          />
+        }/>
+        
+      </Switch>
+      <Footer></Footer>
     </BrowserRouter>
   );
 };
