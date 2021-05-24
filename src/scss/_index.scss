@@ -138,6 +138,26 @@ code {
   justify-content: center;
 }
 
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .pageHeading {
   user-select: none;
+}
+
+.shopEmbedContainers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.tbdText {
+  margin-top: 16vh;
+  margin-bottom: 20vh;
 }

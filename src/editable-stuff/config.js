@@ -4,7 +4,7 @@ const navBar = {
 
 const mainBody = {
   show: true,
-  gradientColors: "#808080, #000000, #CCAC00",
+  gradientColors: "#000000, #000000",
   firstName: "Welcome to Astronomica!",
   middleName: "",
   message: "",
@@ -15,7 +15,7 @@ const mainBody = {
     },
     {
       image: "fa-discord",
-      url: "https://discord.gg/bpTp2QfXsQ",
+      url: "https://discord.com/invite/YaG9yEs",
     },
   ],
 };

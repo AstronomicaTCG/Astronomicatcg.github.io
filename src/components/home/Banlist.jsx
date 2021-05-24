@@ -3,13 +3,13 @@ import { Jumbotron, Container } from "react-bootstrap";
 
 const Banlist = ({ heading }) => {
   return (
-  <div>
+  <div className="page">
     <Jumbotron fluid className="bg-white m-0 overflow-hidden pageHeading" id="banlist">
-      <Container className="p-5 ">
+      <Container className="p-5">
         <h2 className="display-4 pb-5 text-center">
           {heading}
         </h2>
-
+        <h3 className="tbdText pb-5 text-center">TBD</h3>
       </Container>
     </Jumbotron>
   </div>

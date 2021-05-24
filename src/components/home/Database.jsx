@@ -10,6 +10,7 @@ const Database = ({ heading }) => {
           {heading}
         </h2>
 
+        <img src="https://cdn.discordapp.com/attachments/656673917007822849/718917786092699698/UntapNevx.png"></img>
       </Container>
     </Jumbotron>
   </div>
