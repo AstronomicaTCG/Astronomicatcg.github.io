@@ -25,6 +25,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
     "react-typist": "^2.0.5",
+    "react-youtube-playlist": "^2.2.8",
     "typescript": "^3.9.7"
   },
   "scripts": {

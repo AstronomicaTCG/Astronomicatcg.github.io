@@ -7,7 +7,7 @@ const mainBody = {
   gradientColors: "#000000, #000000",
   firstName: "Welcome to Astronomica!",
   middleName: "",
-  message: "",
+  message: "Enter the Elysian Spiral...",
   icons: [
     {
       image: "fa-youtube",
@@ -35,7 +35,7 @@ const howToPlay = {
 
 const shop = {
   show: true,
-  heading: "Shop",
+  heading: "Shop Astronomica @ The Game Crafter",
   items: [
     "https://www.tgcwidgets.com/widget.html#id=BE10418A-C861-11E9-AA51-07AEAB9B09E5&size=bar&buttons=two",
     "https://www.tgcwidgets.com/widget.html#id=ABEB204E-7C90-11EB-9666-7DD5C687CE59&size=bar&buttons=two",

@@ -1,5 +1,7 @@
 import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
+import YouTubePlaylist from 'react-youtube-playlist';
+import 'react-youtube-playlist/dist/styles';
 
 const Lore = ({ heading }) => {
   return (
@@ -9,6 +11,14 @@ const Lore = ({ heading }) => {
           <h2 className="display-4 pb-5 text-center">
             {heading}
           </h2>
+
+          <YouTubePlaylist
+            width={'85%'}
+            height={390}
+            api_key='YourGoogleApiKey'
+            playlist_id='YourYoutubePlaylistID'
+            show_thumbnails
+          />
 
         </Container>
     </Jumbotron>
