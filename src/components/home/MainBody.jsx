@@ -24,7 +24,7 @@ const MainBody = React.forwardRef(
             {" "}
             {message}
           </Typist>
-          {/* Put image here */}
+          <img className="img" src="https://i.imgur.com/6oXeDRp.png"></img>
           <div className="p-5">
             {icons.map((icon, index) => (
               <a
