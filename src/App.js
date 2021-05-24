@@ -37,7 +37,6 @@ const App = () => {
           <MainBody
             gradient={mainBody.gradientColors}
             title={`${mainBody.firstName}`}
-            home={mainBody.home}
             message={mainBody.message}
             icons={mainBody.icons}
           />

@@ -7,7 +7,6 @@ const mainBody = {
   gradientColors: "#808080, #000000, #CCAC00",
   firstName: "Welcome to Astronomica!",
   middleName: "",
-  home: "Home",
   message: "",
   icons: [
     {

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {Link as ReactLink} from 'react-router-dom';
-import { mainBody, news, howToPlay, shop, lore, banlist, database } from "../editable-stuff/config.js";
+import { news, howToPlay, shop, lore, banlist, database } from "../editable-stuff/config.js";
 
 const Navigation = (props) => {
   const path = process.env.REACT_APP_FOR_PATH;
@@ -14,10 +14,14 @@ const Navigation = (props) => {
       expand="lg"
     >
       <ReactLink
-        className="brand"
+        className="nav-link lead" 
         to={path + "/"}
       >
-        {`<${mainBody.home} />`}
+        <div
+          style={{fontWeight: "light", color: "#363636", fontSize: "20px"}}
+        >
+          Home
+        </div>
       </ReactLink>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
