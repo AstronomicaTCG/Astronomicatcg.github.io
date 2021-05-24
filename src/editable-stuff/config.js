@@ -23,12 +23,12 @@ const mainBody = {
 const news = {
   show: true,
   heading: "Astronomica News",
-  news: ["news"]
+  news: ["news"],
 }
 
 const howToPlay = {
   show: true,
-  heading: "How To Play",
+  heading: "Learn How To Play Astronomica",
   url: "https://www.youtube.com/watch?v=FDY4ca5ej0U&ab_channel=AetherGames",
   text: "text goes here",
 }
@@ -50,7 +50,18 @@ const shop = {
 
 const lore = {
   show: true,
-  heading: "Astronomica Lore",
+  heading: "Astronomica Lore - Beneath the Cards",
+  url: "https://www.youtube.com/watch?v=YzpPcWtqf9c&ab_channel=AetherGames",
+  playlistLink: "https://www.youtube.com/watch?v=YzpPcWtqf9c&list=PLrJfi0O6oJYkD4aRCpFTpNaduqqE_3Kc6&ab_channel=AetherGames",
+  loreTextItems: [
+    "beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture",
+    "beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture",
+    "beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture",
+    "beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture",
+    "beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture",
+    "beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture",
+    "beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture beautiful outdoor patio furniture",
+  ]
 }
 
 const banlist = {

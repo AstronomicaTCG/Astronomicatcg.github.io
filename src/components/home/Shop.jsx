@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container, Row, Col } from "react-bootstrap";
+import { Jumbotron, Container } from "react-bootstrap";
 
 const Shop = ({ heading, items }) => {
   return (
@@ -14,7 +14,7 @@ const Shop = ({ heading, items }) => {
           <div className="shopEmbedContainers">
             <div className="shopModule">
               <iframe
-                title="EE Booster Pack"
+                title="S1 Booster Pack"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"
@@ -25,6 +25,7 @@ const Shop = ({ heading, items }) => {
             </div>
             <div className="shopModule">
               <iframe
+                title="S2 Booster Pack"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"
@@ -39,7 +40,7 @@ const Shop = ({ heading, items }) => {
           <div className="shopEmbedContainers">
             <div className="shopModule">
               <iframe
-                title="EE Booster Pack"
+                title="S1 Cache Box"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"
@@ -50,6 +51,7 @@ const Shop = ({ heading, items }) => {
             </div>
             <div className="shopModule">
               <iframe
+                title="S2 Cache Box"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"
@@ -64,7 +66,7 @@ const Shop = ({ heading, items }) => {
           <div className="shopEmbedContainers">
             <div className="shopModule">
               <iframe
-                title="EE Booster Pack"
+                title="Dyson Advent Starter Deck"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"
@@ -75,6 +77,7 @@ const Shop = ({ heading, items }) => {
             </div>
             <div className="shopModule">
               <iframe
+                title="Insect Oracle Starter Deck"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"
@@ -89,7 +92,7 @@ const Shop = ({ heading, items }) => {
           <div className="shopEmbedContainers">
             <div className="shopModule">
               <iframe
-                title="EE Booster Pack"
+                title="Firestorm Starter Deck"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"
@@ -100,6 +103,7 @@ const Shop = ({ heading, items }) => {
             </div>
             <div className="shopModule">
               <iframe
+                title="Two Player Starter Kit"
                 className="shopItem"
                 style={{
                   border:"none", background:"transparent", margin:0, padding:0, width:"740px", height: "163px"

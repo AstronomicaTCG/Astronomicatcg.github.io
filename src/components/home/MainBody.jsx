@@ -23,7 +23,7 @@ const MainBody = React.forwardRef(
           <Typist className="pageHeading lead typist" cursor={{ show: false }}>
             {message}
           </Typist>
-          <img className="img" src="https://i.imgur.com/6oXeDRp.png"></img>
+          <img className="img" src="https://i.imgur.com/6oXeDRp.png" alt="r"></img>
           <div className="p-5">
             {icons.map((icon, index) => (
               <a

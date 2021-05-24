@@ -67,6 +67,9 @@ const App = () => {
         <Route exact path={path + "/lore"} render={() => 
           <Lore          
             heading={lore.heading}
+            url={lore.url}
+            playlistLink={lore.playlistLink}
+            loreTextItems={lore.loreTextItems}
           />
         }/>
         
