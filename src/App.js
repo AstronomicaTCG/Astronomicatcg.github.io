@@ -53,12 +53,14 @@ const App = () => {
           <HowToPlay          
             heading={howToPlay.heading}
             url={howToPlay.url}
+            text={howToPlay.text}
           />
         }/>
         
         <Route exact path={path + "/shop"} render={() => 
           <Shop          
             heading={shop.heading}
+            items={shop.items}
           />
         }/>
         
