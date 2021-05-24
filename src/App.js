@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import {Route, HashRouter as Router, Switch} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import {
   navBar,
   mainBody,
@@ -22,16 +23,17 @@ import Database from "./components/home/Database";
 
 const App = () => {
   const titleRef = React.useRef(0);
+  const path = process.env.REACT_APP_FOR_PATH;
   return (
-    <BrowserRouter>
+    <Router baseline="/">
       {navBar.show && <Navbar ref={titleRef}/>}
       <Switch>
 
         <Route exact path="/">
-          <Redirect to="/home"></Redirect>
+          <Redirect to="/"></Redirect>
         </Route>
 
-        <Route exact path="/home" render={() => 
+        <Route exact path={path + "/"} render={() => 
           <MainBody
             gradient={mainBody.gradientColors}
             title={`${mainBody.firstName}`}
@@ -41,39 +43,39 @@ const App = () => {
           />
         }/>
 
-        <Route exact path="/news" render={() => 
+        <Route exact path={path + "/news"} render={() => 
           <News          
             heading={news.heading}
             news={news.news}
           />
         }/>
 
-        <Route exact path="/howToPlay" render={() => 
+        <Route exact path={path + "/howToPlay"} render={() => 
           <HowToPlay          
             heading={howToPlay.heading}
             url={howToPlay.url}
           />
         }/>
         
-        <Route exact path="/shop" render={() => 
+        <Route exact path={path + "/shop"} render={() => 
           <Shop          
             heading={shop.heading}
           />
         }/>
         
-        <Route exact path="/lore" render={() => 
+        <Route exact path={path + "/lore"} render={() => 
           <Lore          
             heading={lore.heading}
           />
         }/>
         
-        <Route exact path="/banlist" render={() => 
+        <Route exact path={path + "/banlist"} render={() => 
           <Banlist          
             heading={banlist.heading}
           />
         }/>
         
-        <Route exact path="/database" render={() => 
+        <Route exact path={path + "/database"} render={() => 
           <Database          
             heading={database.heading}
           />
@@ -81,7 +83,7 @@ const App = () => {
 
       </Switch>
       <Footer></Footer>
-    </BrowserRouter>
+    </Router>
   );
 };
 

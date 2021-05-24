@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import {Link as ReactLink} from 'react-router-dom';
 import { mainBody, news, howToPlay, shop, lore, banlist, database } from "../editable-stuff/config.js";
 
 const Navigation = (props) => {
+  const path = process.env.REACT_APP_FOR_PATH;
   return (
     <Navbar
       className={` fixed-top  ${
@@ -11,62 +13,62 @@ const Navigation = (props) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand 
+      <ReactLink
         className="brand"
-        href={process.env.PUBLIC_URL + "/home"}
+        to={path + "/"}
       >
         {`<${mainBody.home} />`}
-      </Navbar.Brand>
+      </ReactLink>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           {news.show && (
-            <Nav.Link
+            <ReactLink
               className="nav-link lead" 
-              href={process.env.PUBLIC_URL + "/news"}
+              to={path + "/news"}
             >
               News
-            </Nav.Link>
+            </ReactLink>
           )}
           {howToPlay.show && (
-            <Nav.Link
+            <ReactLink
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/howToPlay"}
+              to={path + "/howToPlay"}
             >
               How to Play
-            </Nav.Link>
+            </ReactLink>
           )}
           {shop.show && (
-            <Nav.Link
+            <ReactLink
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/shop"}
+              to={path + "/shop"}
             >
               Shop
-            </Nav.Link>
+            </ReactLink>
           )}
           {lore.show && (
-            <Nav.Link
+            <ReactLink
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/lore"}
+              to={path + "/lore"}
             >
               Lore
-            </Nav.Link>
+            </ReactLink>
           )}
           {banlist.show && (
-            <Nav.Link
+            <ReactLink
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/banlist"}
+              to={path + "/banlist"}
             >
               Banlist
-            </Nav.Link>
+            </ReactLink>
           )}
           {database.show && (
-            <Nav.Link
+            <ReactLink
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/database"}
+              to={path + "/database"}
             >
               Database
-            </Nav.Link>
+            </ReactLink>
           )}
         </Nav>
       </Navbar.Collapse>
