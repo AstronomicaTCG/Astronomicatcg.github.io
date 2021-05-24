@@ -30,7 +30,7 @@ const App = () => {
       <Switch>
 
         <Route exact path="/">
-          <Redirect to="/"></Redirect>
+          <Redirect to={path + "/"}></Redirect>
         </Route>
 
         <Route exact path={path + "/"} render={() => 
