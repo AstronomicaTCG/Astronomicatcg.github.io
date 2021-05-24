@@ -4,8 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import { mainBody, news, howToPlay, shop, lore, banlist, database } from "../editable-stuff/config.js";
 
 const Navigation = (props) => {
-  const [selectedTab, setSelectedTab] = useState("home");
-
   return (
     <Navbar
       className={` fixed-top  ${

@@ -1,9 +1,7 @@
-// Navigation Bar SECTION
 const navBar = {
   show: true,
 };
 
-// Main Body SECTION
 const mainBody = {
   show: true,
   gradientColors: "#808080, #000000, #CCAC00",
@@ -32,6 +30,7 @@ const news = {
 const howToPlay = {
   show: true,
   heading: "How To Play",
+  url: "https://www.youtube.com/watch?v=FDY4ca5ej0U&ab_channel=AetherGames",
 }
 
 const shop = {
@@ -54,22 +53,4 @@ const database = {
   heading: "Card Database",
 }
 
-const skills = {
-  show: true,
-  heading: "Skills",
-  skills: [
-    "C",
-    "Java",
-    "C#",
-    "Python",
-    "JavaScript",
-    "HTML/CSS",
-    "SQL",
-    "NoSQL",
-    "Elasticsearch",
-    "Ceph",
-    "Flask"
-  ]
-};
-
-export { navBar, mainBody, news, howToPlay, shop, lore, banlist, database, skills };
+export { navBar, mainBody, news, howToPlay, shop, lore, banlist, database };

@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from 'react-player/youtube';
 import { Jumbotron, Container } from "react-bootstrap";
 
-const HowToPlay = ({ heading }) => {
+const HowToPlay = ({ heading, url }) => {
   return (
     <div>
       <Jumbotron fluid className="bg-white m-0 overflow-hidden" id="howToPlay">
@@ -12,7 +12,7 @@ const HowToPlay = ({ heading }) => {
           </h2>
 
         <div className="d-flex justify-content-center align-items-center flex-wrap m-0 overflow-hidden">
-          <ReactPlayer url={"https://www.youtube.com/watch?v=FDY4ca5ej0U&ab_channel=AetherGames"} />
+          <ReactPlayer url={url} />
         </div>
         </Container>
     </Jumbotron>
