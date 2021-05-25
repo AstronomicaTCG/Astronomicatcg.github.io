@@ -28,9 +28,19 @@ const news = {
 
 const howToPlay = {
   show: true,
-  heading: "Learn How To Play Astronomica",
+  heading: "How To Play Astronomica",
   url: "https://www.youtube.com/watch?v=FDY4ca5ej0U&ab_channel=AetherGames",
-  text: "text goes here",
+  pdfRulebook: require("../editable-stuff/Astronomica-Rulebook-1.pdf"),
+  pdfBeginnerGuide: require("../editable-stuff/Astronomica-Beginners-Guide_4.pdf"),
+  text: [
+    "Astronomica is an easy game to pick up and learn!",
+    "The video to the left is a comprehensive guide to playing your first game.",
+    "If you prefer to read, you can check out both the Beginner's Guide and the Full Rulebook.",
+    "",
+    "",
+    "Got a Ruling Question?",
+    "Rulings are also included in the Full Rulebook.",
+  ],
 }
 
 const shop = {

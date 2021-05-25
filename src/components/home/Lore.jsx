@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
+import { Jumbotron, Container, Button } from "react-bootstrap";
 import ReactPlayer from 'react-player/youtube';
 
 const Lore = ({ heading, url, playlistLink, loreTextItems }) => {
@@ -15,11 +15,11 @@ const Lore = ({ heading, url, playlistLink, loreTextItems }) => {
 
             <div className="videoAndTextModule">
               <ReactPlayer url={url} />
-              <a className="linkText" href={playlistLink}>Click Here to View Beneath the Cards Playlist</a>
+              <Button variant="dark" className="linkText" target="_blank" rel="noopener noreferrer" href={playlistLink}>Click Here to Watch All Beneath the Cards Episodes</Button>
             </div>
 
             <div className="loreText">
-              <h4>Astronomica Lore - A Quick Summary</h4>
+              <h4>A Quick Summary of Astronomica Lore</h4>
               <div className="loreTextScroller">
                 {loreTextItems.map((loreItem, index) => (
                   <p>{loreItem}</p>

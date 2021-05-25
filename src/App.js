@@ -53,6 +53,8 @@ const App = () => {
           <HowToPlay          
             heading={howToPlay.heading}
             url={howToPlay.url}
+            pdfRulebook={howToPlay.pdfRulebook}
+            pdfBeginnerGuide={howToPlay.pdfBeginnerGuide}
             text={howToPlay.text}
           />
         }/>
