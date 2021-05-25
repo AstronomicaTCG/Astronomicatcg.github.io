@@ -18,9 +18,9 @@ const Navigation = (props) => {
         to={path + "/"}
       >
         <div
-          style={{fontWeight: "light", color: "#363636", fontSize: "20px"}}
+          style={{fontWeight: "normal", color: "#363636", fontSize: "20px"}}
         >
-          Home
+          [ Home ]
         </div>
       </ReactLink>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
