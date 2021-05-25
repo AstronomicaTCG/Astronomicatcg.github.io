@@ -84,6 +84,7 @@ const App = () => {
         <Route exact path={path + "/database"} render={() => 
           <Database          
             heading={database.heading}
+            cards={database.cards}
           />
         }/>
 

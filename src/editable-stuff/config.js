@@ -94,6 +94,21 @@ const banlist = {
 const database = {
   show: true,
   heading: "Card Database",
+  cards: [
+    "https://cdn.discordapp.com/attachments/656673917007822849/693197459995754496/1_-_Express_Shot_Marine.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693197476265459733/2_-_Ibis_Veil.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199146269802536/3_-_Rebellions_Pulsar.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199158835937360/4_-_Exploration_Vanguard.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199180449185802/5_-_Precinct_Drone_Master.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199191857561600/6_-_Aurelite_Manipulator.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199633354326046/7_-_Cybernetic_Stalker.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199651540566037/8_-_Siren_Belt_Mercenary.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199668493942984/9_-_Android_Superior.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693199685778931812/10_-_Yarrow_Ace_Pilot.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693201823632457840/11_-_Camus_Ace_Capitalist.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693201827339960380/12_-_Alice_Church_Ceo.png",
+    "https://cdn.discordapp.com/attachments/656673917007822849/693201829420597267/13_-_Ephermal_Breaker.png",
+  ],
 }
 
 export { navBar, mainBody, news, howToPlay, shop, lore, banlist, database };

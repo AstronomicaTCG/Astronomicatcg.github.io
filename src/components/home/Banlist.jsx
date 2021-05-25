@@ -10,6 +10,8 @@ const Banlist = ({ heading }) => {
           {heading}
         </h2>
         <h3 className="tbdText pb-5 text-center">TBD</h3>
+        <br></br>
+        <br></br>
       </Container>
     </Jumbotron>
   </div>

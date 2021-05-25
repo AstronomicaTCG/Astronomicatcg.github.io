@@ -31,6 +31,7 @@ const Footer = (props) => {
             This project is open source. Feel free to fork and make your own version.
           </small>
         </p>
+        <div style={{marginBottom: "-5%"}}></div>
       </Container>
     </footer>
   );

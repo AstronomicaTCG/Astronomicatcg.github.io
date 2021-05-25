@@ -238,3 +238,49 @@ code {
   margin-bottom: 5%;
   font-weight: bold;
 }
+
+// DATABASE
+
+.database {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 66vh;
+  margin-bottom: -6%;
+  margin-top: -3%;
+}
+
+.databaseInfoPanel {
+  width: 30vw;
+  height: 60vh;
+}
+
+.databaseScrollContainer {
+  width: 50vw;
+  height: 65vh;
+  overflow-y: scroll;
+  padding-top: 1%;
+}
+
+.checkBoxes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkBoxLabel {
+  margin-top: 4%;
+  margin-right: 8%;
+  display: flex;
+}
+
+.checkBox {
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
+.databaseImage {
+  width: 90%;
+  filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.5))
+}
