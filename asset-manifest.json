@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.221dc72d.chunk.css",
-    "main.js": "/static/js/main.7643858d.chunk.js",
-    "main.js.map": "/static/js/main.7643858d.chunk.js.map",
+    "main.css": "/static/css/main.c759bb3a.chunk.css",
+    "main.js": "/static/js/main.eed66d0b.chunk.js",
+    "main.js.map": "/static/js/main.eed66d0b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.554504a0.js",
     "runtime-main.js.map": "/static/js/runtime-main.554504a0.js.map",
-    "static/js/2.ee089bd9.chunk.js": "/static/js/2.ee089bd9.chunk.js",
-    "static/js/2.ee089bd9.chunk.js.map": "/static/js/2.ee089bd9.chunk.js.map",
+    "static/js/2.c9b105fe.chunk.js": "/static/js/2.c9b105fe.chunk.js",
+    "static/js/2.c9b105fe.chunk.js.map": "/static/js/2.c9b105fe.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7a2bbee2982fa984a156ead60c5c81e1.js": "/precache-manifest.7a2bbee2982fa984a156ead60c5c81e1.js",
+    "precache-manifest.ea7b72779845cfd9707e3c2e812f276f.js": "/precache-manifest.ea7b72779845cfd9707e3c2e812f276f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.221dc72d.chunk.css.map": "/static/css/main.221dc72d.chunk.css.map",
-    "static/js/2.ee089bd9.chunk.js.LICENSE.txt": "/static/js/2.ee089bd9.chunk.js.LICENSE.txt"
+    "static/css/main.c759bb3a.chunk.css.map": "/static/css/main.c759bb3a.chunk.css.map",
+    "static/js/2.c9b105fe.chunk.js.LICENSE.txt": "/static/js/2.c9b105fe.chunk.js.LICENSE.txt",
+    "static/media/Astronomica-Beginners-Guide_4.pdf": "/static/media/Astronomica-Beginners-Guide_4.f681d686.pdf",
+    "static/media/Astronomica-Rulebook-1.pdf": "/static/media/Astronomica-Rulebook-1.8451c39e.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.554504a0.js",
-    "static/js/2.ee089bd9.chunk.js",
-    "static/css/main.221dc72d.chunk.css",
-    "static/js/main.7643858d.chunk.js"
+    "static/js/2.c9b105fe.chunk.js",
+    "static/css/main.c759bb3a.chunk.css",
+    "static/js/main.eed66d0b.chunk.js"
   ]
 }
