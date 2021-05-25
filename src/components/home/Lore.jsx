@@ -19,10 +19,10 @@ const Lore = ({ heading, url, playlistLink, loreTextItems }) => {
             </div>
 
             <div className="loreText">
-              <h4>A Quick Summary of Astronomica Lore</h4>
+              <h4>The Astronomica Timeline</h4>
               <div className="loreTextScroller">
                 {loreTextItems.map((loreItem, index) => (
-                  <p>{loreItem}</p>
+                  <div className={loreItem[0] === "(" ? "loreTextSetMarker" : "loreTextEntry"}>{loreItem}</div>
                 ))}
               </div>
             </div>
