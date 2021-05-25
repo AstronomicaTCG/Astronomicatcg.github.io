@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Jumbotron, Container, Row, Col, InputGroup, FormControl, Button } from "react-bootstrap";
 import Card from "./Card";
 
-const Database = ({ heading, cards }) => {
+const Database = ({ heading, cards, cardInfo }) => {
 
-  const clearAllSelections = () => {
+  const [displayedCardInfo, setDisplayedCardInfo] = useState(["", "", "", ""])
+
+  const toggleAllSelections = (val) => {
     let checkboxes = document.getElementsByClassName("checkBox");
     for (let i = 0; i < checkboxes.length; i++) {
-      checkboxes[i].checked = false;
+      checkboxes[i].checked = val;
     }
   }
 
@@ -31,25 +33,34 @@ const Database = ({ heading, cards }) => {
               </InputGroup>
               <div className="howToPlayTextHeading">Filter By</div>
               <div className="checkBoxes">
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Units</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Munitions</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Events</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Planets</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Units</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Munitions</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Events</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Planets</label>
               </div>
               <div className="checkBoxes">
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>ARs</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>SRs</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>CRs</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Rs</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>UCs</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Cs</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>ARs</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>SRs</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>CRs</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Rs</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>UCs</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Cs</label>
               </div>
               <div className="checkBoxes">
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Set 1</label>
-                <label className="checkBoxLabel"><input className="checkBox" type="checkbox"/>Set 2</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Elysium Expedition</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Hyperius Fallen</label>
               </div>
-              <br></br>
-              <Button variant="dark" onClick={clearAllSelections}>Clear All</Button>
+              <div>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Starter Decks</label>
+              </div>
+              <Button variant="dark" onClick={() => toggleAllSelections(true)}>Select All</Button> &nbsp;
+              <Button variant="dark" onClick={() => toggleAllSelections(false)}>Clear All</Button>
+              <div className="cardInfoContainer">
+                <p className="cardInfo">Name: {displayedCardInfo[0]}</p>
+                <p className="cardInfo">Rarity: {displayedCardInfo[1]}</p>
+                <p className="cardInfo">Set: {displayedCardInfo[2]}</p>
+                <p className="cardInfo">Type: {displayedCardInfo[3]}</p>
+              </div>
             </div>
           </Container>
 
@@ -57,7 +68,14 @@ const Database = ({ heading, cards }) => {
           <Row xs={1} md={3}>
             {cards.map((card, index) => (
               <Col>
-                <Card imageUrl={card} rarity={"C"} set={1} type={"Unit"}></Card>
+                <Card
+                  index={index}
+                  imageUrl={card} 
+                  rarity={cardInfo[index].rarity} 
+                  set={cardInfo[index].set} 
+                  type={cardInfo[index].type}
+                  setDisplayedCardInfo={setDisplayedCardInfo}
+                ></Card>
               </Col>
             ))}
           </Row>

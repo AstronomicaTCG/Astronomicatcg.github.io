@@ -85,6 +85,7 @@ const App = () => {
           <Database          
             heading={database.heading}
             cards={database.cards}
+            cardInfo={database.cardInfo}
           />
         }/>
 
