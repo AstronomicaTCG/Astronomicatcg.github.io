@@ -162,6 +162,15 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
+}
+
+.shopDescriptionText {
+  font-size: 16px;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tbdText {

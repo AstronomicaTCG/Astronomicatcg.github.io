@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
 
-const Shop = ({ heading, items }) => {
+const Shop = ({ heading, items, descriptions }) => {
   return (
     <div>
       <Jumbotron fluid className="bg-white overflow-hidden pageHeading" id="shop">
@@ -21,7 +21,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[0]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[0]}</div>
             </div>
             <div className="shopModule">
               <iframe
@@ -32,7 +32,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[1]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[1]}</div>
             </div>
           </div>
 
@@ -47,7 +47,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[2]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[2]}</div>
             </div>
             <div className="shopModule">
               <iframe
@@ -58,7 +58,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[3]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[3]}</div>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[4]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[4]}</div>
             </div>
             <div className="shopModule">
               <iframe
@@ -84,7 +84,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[5]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[5]}</div>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[6]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[6]}</div>
             </div>
             <div className="shopModule">
               <iframe
@@ -110,7 +110,7 @@ const Shop = ({ heading, items }) => {
                 }}
                 src={items[7]}>
               </iframe>
-              <p>description text</p>
+              <div className="shopDescriptionText">{descriptions[7]}</div>
             </div>
           </div>
           

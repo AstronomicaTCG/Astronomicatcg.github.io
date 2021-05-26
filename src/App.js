@@ -63,6 +63,7 @@ const App = () => {
           <Shop          
             heading={shop.heading}
             items={shop.items}
+            descriptions={shop.descriptions}
           />
         }/>
         
