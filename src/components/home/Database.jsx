@@ -4,13 +4,50 @@ import Card from "./Card";
 
 const Database = ({ heading, cards, cardInfo }) => {
 
-  const [displayedCardInfo, setDisplayedCardInfo] = useState(["", "", "", ""])
+  const [displayedCardInfo, setDisplayedCardInfo] = useState(["", "", "", ""]);
 
+  const [filterByType, setFilterByType] = useState({units: true, munitions: true, events: true, planets: true}); // Units, Munitions, Events, Planets
+  const [filterByRarity, setFilterByRarity] = useState({ar: true, sr: true, cr: true, r: true, uc: true, c: true, fp: true, p: true}); // AR, SR, CR, R, UC, C
+  const [filterBySet, setFilterBySet] = useState({ee: true, hf: true, sd: true}); // EE, HF, SD
+
+  // Turn all checkboxes on or off, and update states accordingly.
   const toggleAllSelections = (val) => {
     let checkboxes = document.getElementsByClassName("checkBox");
     for (let i = 0; i < checkboxes.length; i++) {
       checkboxes[i].checked = val;
     }
+    setFilterByType({units: val, munitions: val, events: val, planets: val});
+    setFilterByRarity({ar: val, sr: val, cr: val, r: val, uc: val, c: val, fp: val, p: val});
+    setFilterBySet({ee: val, hf: val, sd: val});
+  }
+
+  // Turn a specific checkbox on or off, and update state accordingly.
+  const toggleFilter = (filterType, subtype) => {
+    if (filterType === "type") {
+      let items = {...filterByType};
+      items[subtype] = !items[subtype];
+      setFilterByType(items);
+    }
+    else if (filterType === "rarity") {
+      let items = {...filterByRarity};
+      items[subtype] = !items[subtype];
+      setFilterByRarity(items);
+    }
+    else {
+      let items = {...filterBySet};
+      items[subtype] = !items[subtype];
+      setFilterBySet(items);
+    }
+  }
+
+  function cardFilter(element, index) {
+    let type = cardInfo[index].type.toLowerCase();
+    let rarity = cardInfo[index].rarity.toLowerCase();
+    let set = cardInfo[index].set.toLowerCase();
+    if (filterByType[type] && filterByRarity[rarity] && filterBySet[set]) {
+      return true;
+    }
+    return false;
   }
 
   return (
@@ -33,25 +70,27 @@ const Database = ({ heading, cards, cardInfo }) => {
               </InputGroup>
               <div className="howToPlayTextHeading">Filter By</div>
               <div className="checkBoxes">
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Units</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Munitions</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Events</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Planets</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("type", "units")}/>Units</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("type", "munitions")}/>Munitions</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("type", "events")}/>Events</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("type", "planets")}/>Planets</label>
               </div>
               <div className="checkBoxes">
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>ARs</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>SRs</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>CRs</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Rs</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>UCs</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Cs</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "ar")}/>AR</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "sr")}/>SR</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "cr")}/>CR</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "r")}/>R</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "uc")}/>UC</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "c")}/>C</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "fp")}/>FP</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("rarity", "p")}/>P</label>
               </div>
               <div className="checkBoxes">
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Elysium Expedition</label>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Hyperius Fallen</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("set", "ee")}/>Elysium Expedition</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("set", "hf")}/>Hyperius Fallen</label>
               </div>
               <div>
-                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox"/>Starter Decks</label>
+                <label className="checkBoxLabel"><input defaultChecked className="checkBox" type="checkbox" onChange={() => toggleFilter("set", "sd")}/>Starter Decks</label>
               </div>
               <Button variant="dark" onClick={() => toggleAllSelections(true)}>Select All</Button> &nbsp;
               <Button variant="dark" onClick={() => toggleAllSelections(false)}>Clear All</Button>
@@ -66,7 +105,7 @@ const Database = ({ heading, cards, cardInfo }) => {
 
           <Container className="databaseScrollContainer">
           <Row xs={1} md={3}>
-            {cards.map((card, index) => (
+            {cards.filter(cardFilter).map((card, index) => (
               <Col>
                 <Card
                   index={index}

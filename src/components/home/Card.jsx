@@ -29,14 +29,16 @@ const Card = (props) => {
                 cardRarity = "Planet";
                 break;
             case "FP":
-                cardRarity = "Full Art Planet";
+                cardRarity = "Full-Art Planet";
+                break;
+            default:
                 break;
         }
         switch (props.set) {
-            case 1:
+            case "ee":
                 cardSet = "Elysium Expedition";
                 break;
-            case 2:
+            case "hf":
                 cardSet = "Hyperius Fallen";
                 break;
             default:
