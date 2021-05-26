@@ -11,6 +11,7 @@ const Database = ({ heading, cards, cardInfo }) => {
   const [filterByType, setFilterByType] = useState({units: true, munitions: true, events: true, planets: true}); // Units, Munitions, Events, Planets
   const [filterByRarity, setFilterByRarity] = useState({ar: true, sr: true, cr: true, r: true, uc: true, c: true, fp: true, p: true}); // AR, SR, CR, R, UC, C, FP, P
   const [filterBySet, setFilterBySet] = useState({ee: true, hf: true, sd: true}); // EE, HF, SD
+  const [filterByName, setFilterByName] = useState("");
 
   // Turn all checkboxes on or off, and update states accordingly.
   const toggleAllSelections = (val) => {
@@ -44,9 +45,15 @@ const Database = ({ heading, cards, cardInfo }) => {
 
   // Callback function used for filtering cards.
   function cardFilter(element, index) {
-    return filterByType[cardInfo[index].type.toLowerCase()] && 
+    let cardName = element.substring(element.indexOf("-") + 2, element.length - 4).replaceAll("_", " ").toLowerCase();
+    let checkBoxFilters = 
+      filterByType[cardInfo[index].type.toLowerCase()] && 
       filterByRarity[cardInfo[index].rarity.toLowerCase()] && 
       filterBySet[cardInfo[index].set.toLowerCase()];
+    if (filterByName !== "") {
+      return checkBoxFilters && cardName.includes(filterByName.toLowerCase());
+    }
+    return checkBoxFilters;
   }
 
   return (
@@ -66,6 +73,7 @@ const Database = ({ heading, cards, cardInfo }) => {
                   placeholder="Search for a card..."
                   aria-label="Search for a card..."
                   aria-describedby="basic-addon2"
+                  onKeyUp={(e) => setFilterByName(e.target.value)}
                 ></FormControl>
               </InputGroup>
               <div className="howToPlayTextHeading">Filter By</div>
