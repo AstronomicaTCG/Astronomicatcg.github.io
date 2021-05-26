@@ -60,12 +60,18 @@ const Card = (props) => {
         props.setDisplayedCardInfo(["", "", "", ""])
     }
 
+    function clickOnCard() {
+        props.setShowCardModal(true);
+        props.setShowCardURL(props.imageUrl);
+    }
+
     return (
         <div>
             <img 
                 id={props.index}
                 onMouseOver={setDisplayInfo}
                 onMouseOut={clearDisplayInfo}
+                onClick={clickOnCard}
                 className="databaseImage" src={props.imageUrl} alt="r"></img>
         </div>
     );

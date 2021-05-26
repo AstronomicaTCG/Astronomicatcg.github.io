@@ -297,3 +297,21 @@ code {
 .cardInfo {
   margin-bottom: -1%;
 }
+
+.cardModal {
+  display: block;
+  z-index: 1040;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cardModalImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardModalImage {
+  width: 120%;
+}

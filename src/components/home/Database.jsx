@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import { Jumbotron, Container, Row, Col, InputGroup, FormControl, Button } from "react-bootstrap";
+import { Jumbotron, Container, Row, Col, InputGroup, FormControl, Button, Modal } from "react-bootstrap";
 import Card from "./Card";
 
 const Database = ({ heading, cards, cardInfo }) => {
 
   const [displayedCardInfo, setDisplayedCardInfo] = useState(["", "", "", ""]);
+  const [showCardModal, setShowCardModal] = useState(false);
+  const [showCardURL, setShowCardURL] = useState("");
 
   const [filterByType, setFilterByType] = useState({units: true, munitions: true, events: true, planets: true}); // Units, Munitions, Events, Planets
-  const [filterByRarity, setFilterByRarity] = useState({ar: true, sr: true, cr: true, r: true, uc: true, c: true, fp: true, p: true}); // AR, SR, CR, R, UC, C
+  const [filterByRarity, setFilterByRarity] = useState({ar: true, sr: true, cr: true, r: true, uc: true, c: true, fp: true, p: true}); // AR, SR, CR, R, UC, C, FP, P
   const [filterBySet, setFilterBySet] = useState({ee: true, hf: true, sd: true}); // EE, HF, SD
 
   // Turn all checkboxes on or off, and update states accordingly.
@@ -40,14 +42,11 @@ const Database = ({ heading, cards, cardInfo }) => {
     }
   }
 
+  // Callback function used for filtering cards.
   function cardFilter(element, index) {
-    let type = cardInfo[index].type.toLowerCase();
-    let rarity = cardInfo[index].rarity.toLowerCase();
-    let set = cardInfo[index].set.toLowerCase();
-    if (filterByType[type] && filterByRarity[rarity] && filterBySet[set]) {
-      return true;
-    }
-    return false;
+    return filterByType[cardInfo[index].type.toLowerCase()] && 
+      filterByRarity[cardInfo[index].rarity.toLowerCase()] && 
+      filterBySet[cardInfo[index].set.toLowerCase()];
   }
 
   return (
@@ -59,6 +58,7 @@ const Database = ({ heading, cards, cardInfo }) => {
         </h2>
 
         <div className="database">
+
           <Container className="databaseInfoPanel">
             <div>
               <InputGroup className="mb-3">
@@ -104,21 +104,34 @@ const Database = ({ heading, cards, cardInfo }) => {
           </Container>
 
           <Container className="databaseScrollContainer">
-          <Row xs={1} md={3}>
-            {cards.filter(cardFilter).map((card, index) => (
-              <Col>
-                <Card
-                  index={index}
-                  imageUrl={card} 
-                  rarity={cardInfo[index].rarity} 
-                  set={cardInfo[index].set} 
-                  type={cardInfo[index].type}
-                  setDisplayedCardInfo={setDisplayedCardInfo}
-                ></Card>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+            <Row xs={1} md={3}>
+              {cards.filter(cardFilter).map((card, index) => (
+                <Col>
+                  <Card
+                    index={index}
+                    imageUrl={card} 
+                    rarity={cardInfo[index].rarity} 
+                    set={cardInfo[index].set} 
+                    type={cardInfo[index].type}
+                    setDisplayedCardInfo={setDisplayedCardInfo}
+                    setShowCardModal={setShowCardModal}
+                    setShowCardURL={setShowCardURL}
+                  ></Card>
+                </Col>
+              ))}
+            </Row>
+          </Container>
+
+          <Modal className="cardModal"
+            show={showCardModal}
+            onHide={() => setShowCardModal(false)}
+            animation={false}
+          >
+            <div className="cardModalImageContainer">
+              <img className="cardModalImage" src={showCardURL} alt="r"></img>
+            </div>
+          </Modal>
+  
         </div>
 
       </Container>
