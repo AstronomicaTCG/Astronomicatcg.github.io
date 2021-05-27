@@ -468,8 +468,128 @@ const database = {
     {rarity: "P", set: "ee", type: "Planets"},
     {rarity: "P", set: "ee", type: "Planets"}, // phoukas
 
-    {rarity: "SR", set: "hf", type: "Units"} // prime matriarch
-
+    {rarity: "SR", set: "hf", type: "Units"}, //prime Matriarch
+    {rarity: "SR", set: "hf", type: "Units"}, 
+    {rarity: "R", set: "hf", type: "Units"}, 
+    {rarity: "R", set: "hf", type: "Units"}, 
+    {rarity: "R", set: "hf", type: "Units"}, 
+    {rarity: "R", set: "hf", type: "Events"}, 
+    {rarity: "R", set: "hf", type: "Munitions"}, //Lightwave
+    {rarity: "UC", set: "hf", type: "Units"}, 
+    {rarity: "UC", set: "hf", type: "Units"}, 
+    {rarity: "UC", set: "hf", type: "Units"}, 
+    {rarity: "UC", set: "hf", type: "Events"}, 
+    {rarity: "UC", set: "hf", type: "Events"}, 
+    {rarity: "UC", set: "hf", type: "Events"}, 
+    {rarity: "UC", set: "hf", type: "Events"}, 
+    {rarity: "UC", set: "hf", type: "Events"}, 
+    {rarity: "C", set: "hf", type: "Units"}, //Rebel Brawler
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Events"}, //Stealth
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Munitions"},
+    {rarity: "C", set: "hf", type: "Munitions"},
+    {rarity: "C", set: "hf", type: "Events"}, //Shipyard
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "SR", set: "hf", type: "Units"}, //Morgana
+    {rarity: "SR", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Events"}, //Alchemic Blast
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Events"}, //Vision
+    {rarity: "UC", set: "hf", type: "Events"},
+    {rarity: "UC", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Units"}, // Coven Recruit
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Events"}, // fortunate recruitment
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Munitions"}, // Stone Sword
+    {rarity: "C", set: "hf", type: "Munitions"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "SR", set: "hf", type: "Units"}, //Minerva
+    {rarity: "SR", set: "hf", type: "Units"}, 
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Units"},
+    {rarity: "R", set: "hf", type: "Munitions"},
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Units"},
+    {rarity: "UC", set: "hf", type: "Events"},
+    {rarity: "UC", set: "hf", type: "Events"},
+    {rarity: "UC", set: "hf", type: "Events"},
+    {rarity: "UC", set: "hf", type: "Munitions"},
+    {rarity: "UC", set: "hf", type: "Munitions"},
+    {rarity: "C", set: "hf", type: "Units"}, // Dragonic Effigy
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Units"},
+    {rarity: "C", set: "hf", type: "Events"}, //Chalice
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "C", set: "hf", type: "Events"},
+    {rarity: "AR", set: "hf", type: "Units"}, // Dyson Anima
+    {rarity: "AR", set: "hf", type: "Events"}, // Void
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "P", set: "hf", type: "Planets"},
+    {rarity: "CR", set: "ee", type: "Units"}, //Set1Collabs
+    {rarity: "CR", set: "ee", type: "Units"},
+    {rarity: "CR", set: "ee", type: "Units"},
+    {rarity: "CR", set: "ee", type: "Units"},
+    {rarity: "CR", set: "hf", type: "Units"}, //Set2Collabs
+    {rarity: "CR", set: "hf", type: "Units"},
+    {rarity: "CR", set: "hf", type: "Units"},
+    {rarity: "CR", set: "hf", type: "Units"},
+    {rarity: "SR", set: "sd", type: "Units"},
+    {rarity: "SR", set: "sd", type: "Units"},
+    {rarity: "SR", set: "sd", type: "Units"},
+    {rarity: "SR", set: "sd", type: "Events"},
   ]
 }
 
