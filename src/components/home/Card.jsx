@@ -3,7 +3,6 @@ import React from "react";
 const Card = (props) => {
 
     function setDisplayInfo () {
-        let cardName = props.imageUrl.substring(props.imageUrl.indexOf("-") + 2, props.imageUrl.length - 4).replaceAll("_", " ");
         let cardRarity = "";
         let cardSet = "";
         switch (props.rarity) {
@@ -46,7 +45,7 @@ const Card = (props) => {
                 break;
         }
         props.setDisplayedCardInfo([
-            cardName,
+            props.cardName,
             cardRarity,
             cardSet,
             props.type

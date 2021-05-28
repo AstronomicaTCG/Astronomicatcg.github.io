@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Jumbotron, Container, Row, Col, InputGroup, FormControl, Button, Modal } from "react-bootstrap";
 import Card from "./Card";
 
-const Database = ({ heading, cards, cardInfo }) => {
+const Database = ({ heading, cards, cardNames, cardInfo }) => {
 
   const [displayedCardInfo, setDisplayedCardInfo] = useState(["", "", "", ""]);
   const [showCardModal, setShowCardModal] = useState(false);
@@ -45,13 +45,12 @@ const Database = ({ heading, cards, cardInfo }) => {
 
   // Callback function used for filtering cards.
   function cardFilter(element, index) {
-    let cardName = element.substring(element.indexOf("-") + 2, element.length - 4).replaceAll("_", " ").toLowerCase();
     let checkBoxFilters = 
       filterByType[cardInfo[index].type.toLowerCase()] && 
       filterByRarity[cardInfo[index].rarity.toLowerCase()] && 
       filterBySet[cardInfo[index].set.toLowerCase()];
     if (filterByName !== "") {
-      return checkBoxFilters && cardName.includes(filterByName.toLowerCase());
+      return checkBoxFilters && cardNames[index].toLowerCase().includes(filterByName.toLowerCase());
     }
     return checkBoxFilters;
   }
@@ -118,6 +117,7 @@ const Database = ({ heading, cards, cardInfo }) => {
                   <Card
                     index={index}
                     imageUrl={card} 
+                    cardName={cardNames[index]}
                     rarity={cardInfo[index].rarity} 
                     set={cardInfo[index].set} 
                     type={cardInfo[index].type}
