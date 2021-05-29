@@ -59,12 +59,12 @@ const shop = {
   descriptions: [
     "Enter the Elysian Spiral with Astronomica’s First Set! Fight alongside the brutal Baylon Force, the Cunning Kakytos Council, or the manipulative Legion Corps with over 100 Cards to collect. 18 Cards per Pack - including 3 Planets, and 2 Rares per pack!",
     "Battle to save Hyperius in Astronomica’s Second Set - Hyperius Fallen! The Galaxy is on the verge of war due to the tense conflicts during the search for Elysium. Now, as the Celestial Senate meets for a special meeting, multiple parties fight to change the fate of the Galaxy forever! 18 Cards per pack - including 2 Planets and 3 Rares per pack!",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
+    "Journey through worlds with the Astronomica Elysium Expedition Cache Box - featuring four characters from other games in the Homemade TCG Community, this box has everything you need to boost your collection. 36 Cards per box - including 2 Collaboration Rares, and 1 Rare, and a Super Rare!",
+    "Find more allies with the Astronomica Hyperius Fallen Cache Box - featuring 34 cards from the second set, Hyperius Fallen. With four new collaboration cards, and more rares per box, this pack is a great way to jumpstart your collection! 36 Cards per box - including 2 Collaboration Rares, and 1 Rare, and a Super Rare!",
+    "Unleash the power of the stars with the Dyson Engine on your side! Dyson Advent gives you a 36 card deck focused on the Legion Corps. Explore the galaxy, then control the planets themselves with the power of the Dyson Engine! Features a 36 card Structure Deck - including 2 Super Rares and 2 Rares!",
+    "Insect Oracle gives you control over the powerful criminal Selena, Insect Oracle! Think quickly, and use your discard pile as a second hand of events to bring down your opponent! Features a 36 card Structure Deck - including 2 Super Rares and 2 Rares!",
+    "Channel the power of fire itself with the Firestorm Starter Deck! Beat down your enemies and boost your attack to sky-high levels - and wield the manifestation of fire, Inferno Elemental! Features a 36 card Structure Deck - including 2 Super Rares and 2 Rares!",
+    "Battle your friends and journey into Astronomica with the Two Player Starter Kit - featuring the Insect Oracle and Firestorm Starter Decks! Includes 72 Cards - both Starter Decks, along with 2 D12s, and a Beginner’s Guide!",
   ]
 }
 
