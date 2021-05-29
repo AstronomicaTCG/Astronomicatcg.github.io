@@ -69,7 +69,7 @@ const shop = {
     "Unleash the power of the stars with the Dyson Engine on your side! Dyson Advent gives you a 36 card deck focused on the Legion Corps. Explore the galaxy, then control the planets themselves with the power of the Dyson Engine! Features a 36 card Structure Deck - including 2 Super Rares and 2 Rares!",
     "Insect Oracle gives you control over the powerful criminal Selena, Insect Oracle! Think quickly, and use your discard pile as a second hand of events to bring down your opponent! Features a 36 card Structure Deck - including 2 Super Rares and 2 Rares!",
     "Channel the power of fire itself with the Firestorm Starter Deck! Beat down your enemies and boost your attack to sky-high levels - and wield the manifestation of fire, Inferno Elemental! Features a 36 card Structure Deck - including 2 Super Rares and 2 Rares!",
-    "Battle your friends and journey into Astronomica with the Two Player Starter Kit - featuring the Insect Oracle and Firestorm Starter Decks! Includes 72 Cards - both Starter Decks, along with 2 D12s, and a Beginner’s Guide!",
+    "Battle your friends and journey into Astronomica with the Two Player Starter Kit - featuring the Insect Oracle and Firestorm Starter Decks! Includes 72 Cards - both Starter Decks, along with 2 d12 dice, and a Beginner’s Guide!",
   ]
 }
 
