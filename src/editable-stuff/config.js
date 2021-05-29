@@ -86,12 +86,12 @@ const lore = {
     "The Stemata were a major colonial power, led by a powerful monarchy. During the early years, their empire spanned a large amount of space. However, their homeworld was eventually destroyed by rebelling colonies, leaving only a small part of the Armada intact. During the escape, the remnants entered a cosmic storm, which split the fleet in half.",
     "In 0 IDS, after centuries of conflict and tension across the galaxy, the three remaining major factions formed a peace treaty, and a weak central government called the Celestial Senate is established on the planet of Diyu. With this, an uneasy peacetime begins.",
     "(Astronomica Timeline)",
-    "Approximately 1,500 years later, in 1541 IDS, a mysterious energy wave suddenly ripples throughout the galaxy, causing many Precursor relics to respond irrationally. Rumors from deep within the Magnetic Wastes talk of a planet which seemingly appeared out of nowhere. Scholars and cartographers speculate that this planet could be the long-lost Elysium.",
-    "The three major factions (Legion Corps, Babylon Force, and Kakytos Council) each send their own groups to investigate the rumors, beginning the great search for Elysium.",
+    "Over a millenia later, in 1541 IDS, a mysterious energy wave suddenly ripples throughout the galaxy, causing many Precursor relics to respond irrationally. Rumors from deep within the Magnetic Wastes talk of a planet which seemingly appeared out of nowhere. Scholars and cartographers speculate that this planet could be the long-lost Elysium.",
+    "The three major factions (Legion Corps, Babylon Force, and Kakytos Council) each send their own squads to investigate the rumors, beginning the great search for Elysium!",
     "(Set 1: Elysium Expedition)",
     "Around the same time, chaos erupts in the halls of the Celestial Senate due to increased tensions and skirmishes between factions. A special assembly of senators is called to discuss the warfare and other important matters on the planet Diyu.",
-    "At the same time as the special assembly, rebellions start to form in the lower layers of Diyu’s cities. The major city on Diyu is Hyperius, a city dealing with large wealth disparity.",
-    "Sabre Industries is tasked by the government to keep the Rebels at bay; and with Magnus Lance at the wheel in Alice’s absence, Hyperius becomes a battleground.",
+    "At the same time as the special assembly, rebellions start to form in the lower layers of Diyu’s cities. The major city on Diyu is Hyperius, a city afflicted by large wealth disparity and corruption.",
+    "Sabre Industries is tasked by the government to keep the Rebellion at bay, and with the ruthless Magnus Lance at the wheel in Alice’s absence, Hyperius becomes a battleground!",
     "(Set 2: Hyperius Fallen)",
   ]
 }
