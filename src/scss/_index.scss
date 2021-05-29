@@ -331,3 +331,25 @@ code {
   padding: 0% 0.5% 0% 0.5%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+
+.newsArticle {
+  padding: 2%;
+  border-style: solid;
+  border-width: 0.75px;
+  border-color: lightgray;
+}
+
+
+.articleDate {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.articleTitle {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.newsArticleScrollContainer {
+  overflow-y: scroll;
+}
