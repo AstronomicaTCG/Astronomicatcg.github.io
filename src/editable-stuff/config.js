@@ -512,7 +512,7 @@ const database = {
     "Death Angel",
     "Mystician Enforcer",
     "Senate Scribe",
-    "Blue Sabre Arrest Growth",
+    "Blue Sabre Arrest Drone",
     "Vision of Annihilation",
     "Rebellion Beacon",
     "Void Shift",

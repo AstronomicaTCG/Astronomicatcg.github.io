@@ -43,6 +43,12 @@ const Database = ({ heading, cards, cardNames, cardInfo }) => {
     }
   }
 
+  // Clear the name filter and its contents.
+  const clearTextFilter = () => {
+    setFilterByName("");
+    document.getElementById("cardTextFilter").value = "";
+  }
+
   // Callback function used for filtering cards.
   function cardFilter(element, index) {
     let checkBoxFilters = 
@@ -69,11 +75,13 @@ const Database = ({ heading, cards, cardNames, cardInfo }) => {
             <div>
               <InputGroup className="mb-3">
                 <FormControl
+                  id="cardTextFilter"
                   placeholder="Search for a card..."
                   aria-label="Search for a card..."
                   aria-describedby="basic-addon2"
                   onKeyUp={(e) => setFilterByName(e.target.value)}
                 ></FormControl>
+                &nbsp; <Button variant="dark" onClick={clearTextFilter}>Clear</Button>
               </InputGroup>
               <div className="howToPlayTextHeading">Filter By</div>
               <div className="checkBoxes">
@@ -117,10 +125,10 @@ const Database = ({ heading, cards, cardNames, cardInfo }) => {
                   <Card
                     index={index}
                     imageUrl={card} 
-                    cardName={cardNames[index]}
-                    rarity={cardInfo[index].rarity} 
-                    set={cardInfo[index].set} 
-                    type={cardInfo[index].type}
+                    cardName={cardNames.filter(cardFilter)[index]}
+                    rarity={cardInfo.filter(cardFilter)[index].rarity} 
+                    set={cardInfo.filter(cardFilter)[index].set} 
+                    type={cardInfo.filter(cardFilter)[index].type}
                     setDisplayedCardInfo={setDisplayedCardInfo}
                     setShowCardModal={setShowCardModal}
                     setShowCardURL={setShowCardURL}
