@@ -71,7 +71,12 @@ const Card = (props) => {
                 onMouseOver={setDisplayInfo}
                 onMouseOut={clearDisplayInfo}
                 onClick={clickOnCard}
-                className="databaseImage" src={props.imageUrl} alt="r"></img>
+                className="databaseImage" src={props.imageUrl} alt="r"
+                height="350px"
+                width="250px"
+            ></img>
+                
+            
         </div>
     );
 };
