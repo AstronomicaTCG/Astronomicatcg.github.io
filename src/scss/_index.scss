@@ -333,7 +333,7 @@ code {
 }
 
 .newsArticle {
-  padding: 2%;
+  padding: 1%;
   border-style: solid;
   border-width: 0.75px;
   border-color: lightgray;
@@ -341,7 +341,7 @@ code {
 
 
 .articleDate {
-  font-size: 22px;
+  font-size: 18px;
   font-style: italic;
 }
 
@@ -352,4 +352,10 @@ code {
 
 .newsArticleScrollContainer {
   overflow-y: scroll;
+  height: 52vh;
+}
+
+.newsArticle {
+  margin-bottom: -5%;
+  margin-top: -5%;
 }
