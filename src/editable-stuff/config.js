@@ -25,14 +25,14 @@ const news = {
   heading: "The Latest in Astronomica News",
   news: [
     {
-      date: "May 29 2021", 
-      title: "The Official Astronomica TCG Website is Now Live!", 
-      body: "Hi guys! The Astronomica TCG website has officially launched. Here, you can find news updates about the game and the Aether Games YouTube channel, tutorials for learning Astronomica, an introduction to Astronomica's deep lore, direct links to buy Astronomica products on the Game Crafter, an official competitive ban list, and a comprehensive, interactive card database! Enjoy!"
-    },
-    {
       date: "July 2 2021", 
       title: "Image Loading Optimizations", 
       body: "Some optimizations in the website code have been made with regards to image loading. Hopefully this will make loading and looking through the database a bit smoother."
+    },
+    {
+      date: "May 29 2021", 
+      title: "The Official Astronomica TCG Website is Now Live!", 
+      body: "Hi guys! The Astronomica TCG website has officially launched. Here, you can find news updates about the game and the Aether Games YouTube channel, tutorials for learning Astronomica, an introduction to Astronomica's deep lore, direct links to buy Astronomica products on the Game Crafter, an official competitive ban list, and a comprehensive, interactive card database! Enjoy!"
     },
   ],
 }
