@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.49d2f7a7.chunk.css",
-    "main.js": "/static/js/main.bb2f27e5.chunk.js",
-    "main.js.map": "/static/js/main.bb2f27e5.chunk.js.map",
+    "main.css": "/static/css/main.012c764d.chunk.css",
+    "main.js": "/static/js/main.b51ced6e.chunk.js",
+    "main.js.map": "/static/js/main.b51ced6e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.554504a0.js",
     "runtime-main.js.map": "/static/js/runtime-main.554504a0.js.map",
     "static/js/2.c39a05c1.chunk.js": "/static/js/2.c39a05c1.chunk.js",
     "static/js/2.c39a05c1.chunk.js.map": "/static/js/2.c39a05c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a9001fb1dacb604e546e0f40abe53ae9.js": "/precache-manifest.a9001fb1dacb604e546e0f40abe53ae9.js",
+    "precache-manifest.e65db23c5b30bdce5eed3f2860c106a4.js": "/precache-manifest.e65db23c5b30bdce5eed3f2860c106a4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.49d2f7a7.chunk.css.map": "/static/css/main.49d2f7a7.chunk.css.map",
+    "static/css/main.012c764d.chunk.css.map": "/static/css/main.012c764d.chunk.css.map",
     "static/js/2.c39a05c1.chunk.js.LICENSE.txt": "/static/js/2.c39a05c1.chunk.js.LICENSE.txt",
     "static/media/Astronomica-Beginners-Guide_4.pdf": "/static/media/Astronomica-Beginners-Guide_4.f681d686.pdf",
     "static/media/Astronomica-Rulebook-1.pdf": "/static/media/Astronomica-Rulebook-1.8451c39e.pdf"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.554504a0.js",
     "static/js/2.c39a05c1.chunk.js",
-    "static/css/main.49d2f7a7.chunk.css",
-    "static/js/main.bb2f27e5.chunk.js"
+    "static/css/main.012c764d.chunk.css",
+    "static/js/main.b51ced6e.chunk.js"
   ]
 }
