@@ -9,7 +9,9 @@ const NewsArticle = (props) => {
             <div className="newsArticle" md={3}>
                 <div className="articleDate">{props.date}</div>
                 <div className="articleTitle">{props.title}</div>
-                <p>{props.body}</p>
+                {props.body.map((line, index) => (
+                  <p style={{fontSize: '20px'}}>{line}</p>
+                ))}
             </div>
         </Container>
     </Jumbotron>
