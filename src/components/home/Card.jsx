@@ -5,6 +5,7 @@ const Card = (props) => {
     function setDisplayInfo () {
         let cardRarity = "";
         let cardSet = "";
+        let cardFaction = "";
         switch (props.rarity) {
             case "AR":
                 cardRarity = "Astral Rare";
@@ -44,11 +45,26 @@ const Card = (props) => {
                 cardSet = "Starter Decks";
                 break;
         }
+        switch (props.faction) {
+            case "LC":
+                cardFaction = "Legion Corps";
+                break;
+            case "KC":
+                cardFaction = "Kakytos Council";
+                break;
+            case "BF":
+                cardFaction = "Babylon Force";
+                break;
+            case "VY":
+                cardFaction = "Voyager";
+                break;
+        }
         props.setDisplayedCardInfo([
             props.cardName,
             cardRarity,
-            cardSet,
-            props.type
+            cardFaction,
+            props.type,
+            cardSet
         ])
         Array.from(document.getElementsByClassName("databaseImage")).forEach((element) => element.style.filter = "drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25))");
         document.getElementById(props.index).style.filter = "drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.75))";
@@ -71,9 +87,7 @@ const Card = (props) => {
                 onMouseOver={setDisplayInfo}
                 onMouseOut={clearDisplayInfo}
                 onClick={clickOnCard}
-                className="databaseImage" src={props.imageUrl} alt="r"
-                height="350px"
-                width="250px"
+                className="databaseImage" src={props.imageUrl} alt="card"
             ></img>
                 
             

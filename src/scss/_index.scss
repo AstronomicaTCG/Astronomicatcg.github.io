@@ -272,24 +272,27 @@ code {
   padding-top: 1%;
 }
 
+.databaseCheckboxHeader {
+  margin-top: 5vh;
+}
+
 .checkBoxes {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: -0.5vh;
 }
 
 .checkBoxLabel {
-  margin-top: 4%;
-  margin-right: 8%;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
   display: flex;
-}
-
-.checkBox {
-  margin-right: 1%;
-  margin-top: 1%;
+  font-weight: normal;
 }
 
 .databaseImage {
+  height: 30vh;
+  width: 12vw;
   filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25));
   content-visibility: auto;
 }
@@ -299,6 +302,8 @@ code {
 }
 
 .cardInfoContainer {
+  display: flex;
+  flex-direction: column;
   margin-top: 3%;
   border-style: solid;
   border-width: 1px;
@@ -308,7 +313,8 @@ code {
 }
 
 .cardInfo {
-  margin-bottom: -1%;
+  font-size: 18px;
+  padding-bottom: -4%;
 }
 
 .cardModal {

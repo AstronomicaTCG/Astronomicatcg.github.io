@@ -11,7 +11,6 @@ const Navigation = (props) => {
       className={` fixed-top  ${
         "navbar-white"
       }`}
-      expand="lg"
     >
       <ReactLink
         className="nav-link lead" 
