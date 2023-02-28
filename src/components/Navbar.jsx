@@ -19,7 +19,7 @@ const Navigation = (props) => {
         <div
           style={{fontWeight: "normal", color: "#363636", fontSize: "20px"}}
         >
-          [ Home ]
+          [Home]
         </div>
       </ReactLink>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -38,7 +38,7 @@ const Navigation = (props) => {
               className="nav-link lead"
               to={path + "/howToPlay"}
             >
-              How to Play
+              Play
             </ReactLink>
           )}
           {shop.show && (

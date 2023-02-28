@@ -81,7 +81,7 @@ const Card = (props) => {
     }
 
     return (
-        <div>
+        <div className="cardImageContainer">
             <img 
                 id={props.index}
                 onMouseOver={setDisplayInfo}

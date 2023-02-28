@@ -1,8 +1,10 @@
 html {
   font-size: 14px;
+
   @media (min-width: 768px) {
     font-size: 16px;
   }
+
   scroll-behavior: smooth;
 }
 
@@ -48,31 +50,38 @@ code {
   background-color: rgba(255, 255, 255, 0);
   transition: background-color 0.2s;
 }
+
 .navbar-white {
   background-color: rgba(234, 236, 239, 0.81);
   transition: background-color 0.2s;
 }
+
 .brand {
   color: #363636 !important;
 }
+
 .nav-link {
   transition: color, 0.2s;
 }
+
 .toggler {
   border: none;
   padding: 4px;
   border-radius: 4px;
+
   &:focus {
     outline: none;
     background-color: rgba(0, 0, 0, 0.05);
   }
 }
+
 .socialicons {
   color: white;
   padding-left: 5px;
   padding-right: 5px;
   transition: all 0.8s;
   margin: 4px;
+
   &:hover {
     color: #CCAC00;
     padding-left: 5px;
@@ -93,9 +102,11 @@ code {
 
 .typist {
   min-height: 6rem;
+
   @media (min-width: 360px) {
     min-height: 4rem;
   }
+
   @media (min-width: 768px) {
     min-height: 2.5rem;
   }
@@ -103,15 +114,18 @@ code {
 
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
+
   &:hover {
     box-shadow: 0 2rem 3rem rgba($black, 0.175) !important;
     transform: translateY(-2px);
     transition: transform 0.3s, box-shadow 0.3s;
   }
 }
+
 .skills-tabs {
   flex-grow: 1;
 }
+
 .skills-tab {
   flex-grow: 1;
   text-align: center;
@@ -119,13 +133,16 @@ code {
 
 .progress {
   transform-origin: left;
-  & > * {
+
+  &>* {
     transform: scaleX(0);
   }
 }
+
 .progress-bar-animation {
   @extend .progress;
-  & > * {
+
+  &>* {
     animation: progress 1.5s ease-in-out forwards;
   }
 }
@@ -151,10 +168,16 @@ code {
 
 .shopEmbedContainers {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 2%;
+}
+
+@media (min-width: 500px) {
+  .shopEmbedContainers {
+    flex-direction: row;
+  }
 }
 
 .shopModule {
@@ -162,12 +185,12 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  padding: 0% 2% 5% 2%;
 }
 
 .shopDescriptionText {
   font-size: 16px;
-  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,8 +207,15 @@ code {
 
 .howToPlayBody {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media (min-width: 500px) {
+  .howToPlayBody {
+    flex-direction: row;
+  }
 }
 
 .howToPlayLeftColumn {
@@ -198,8 +228,6 @@ code {
 .howToPlayRightColumn {
   display: flex;
   flex-direction: column;
-  max-width: 40vw;
-  height: 40vh;
   justify-content: space-evenly;
   align-items: flex-start;
 }
@@ -225,15 +253,14 @@ code {
 }
 
 .loreText {
-  width: 40%;
   max-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2%;
 }
 
 .loreTextScroller {
-  max-height: 50vh;
   overflow-y: auto;
 }
 
@@ -252,47 +279,61 @@ code {
 
 .database {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 66vh;
   margin-bottom: -6%;
   margin-top: -3%;
 }
 
+@media (min-width: 500px) {
+  .database {
+    flex-direction: row;
+  }
+}
+
 .databaseInfoPanel {
-  width: 30vw;
-  height: 60vh;
+  padding-bottom: 4%;
 }
 
 .databaseScrollContainer {
-  width: 50vw;
   height: 65vh;
   overflow-y: scroll;
   padding-top: 1%;
+  width: 100%;
 }
 
-.databaseCheckboxHeader {
-  margin-top: 5vh;
-}
-
-.checkBoxes {
+.databaseFilters {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+}
+
+.checkBoxColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   margin-bottom: -0.5vh;
+  margin-right: 1vw;
 }
 
 .checkBoxLabel {
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
   display: flex;
   font-weight: normal;
+  margin-bottom: 1vh;
+}
+
+input[type=checkbox] {
+  margin-right: 0.5vw;
+}
+
+.cardImageContainer {
+  display: flex;
+  aspect-ratio: auto;
+  justify-content: center;
 }
 
 .databaseImage {
-  height: 30vh;
-  width: 12vw;
+  height: inherit;
+  width: 100%;
   filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25));
   content-visibility: auto;
 }
@@ -358,7 +399,7 @@ code {
 
 .newsArticleScrollContainer {
   overflow-y: scroll;
-  height: 52vh;
+  height: 59vh;
 }
 
 .newsArticle {

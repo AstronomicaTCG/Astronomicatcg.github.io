@@ -6,8 +6,8 @@ const News = ({ heading, news }) => {
   return (
     <div>
       <Jumbotron fluid className="bg-white m-0 overflow-hidden pageHeading" id="news">
-        <Container className="p-5">
-          <h2 className="display-4 pb-5 text-center">
+        <Container className="p-3">
+          <h2 className="display-5 pb-5 text-center">
             {heading}
           </h2>
           <div className="newsArticleScrollContainer">
