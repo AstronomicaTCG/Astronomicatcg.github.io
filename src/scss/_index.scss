@@ -296,15 +296,20 @@ code {
   padding-bottom: 4%;
 }
 
-.databaseScrollContainer {
-  height: 65vh;
-  overflow-y: scroll;
+.databaseRightSideContainer {
+  height: 70vh;
   padding-top: 1%;
   width: 100%;
 }
 
+.databaseScrollContainer {
+  height: 58vh;
+  overflow-y: scroll;
+}
+
 .databaseFilters {
   display: flex;
+  padding-bottom: 2%;
 }
 
 .checkBoxColumn {
@@ -334,6 +339,7 @@ input[type=checkbox] {
 .databaseImage {
   height: inherit;
   width: 100%;
+  min-width: 90%;
   filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25));
   content-visibility: auto;
 }
@@ -342,10 +348,19 @@ input[type=checkbox] {
   cursor: zoom-in;
 }
 
+.databasePagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1% 0% 1% 0%;
+  background-color: rgba(234, 236, 239, 0.81);
+  border-radius: 5px;
+}
+
 .cardInfoContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
+  margin-top: 15%;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(234, 236, 239, 0.81);
@@ -405,4 +420,9 @@ input[type=checkbox] {
 .newsArticle {
   margin-bottom: -5%;
   margin-top: -5%;
+}
+
+.centeredText {
+  margin-top: 1%;
+  text-align: center;
 }
